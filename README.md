@@ -1,8 +1,10 @@
 # Ansible Role: NTP
 
-#### Version: 1.0.0
+#### Version: 1.0.2
 
 [![pipeline status](https://gitlab.com/sparknsh/ansible-role-ntp/badges/master/pipeline.svg)](https://gitlab.com/sparknsh/ansible-role-ntp/commits/master)
+[![Ansible Role](https://img.shields.io/ansible/role/291593.svg)](https://galaxy.ansible.com/sparknsh/ntp)
+[![Ansible Role](https://img.shields.io/ansible/role/d/291593.svg)](https://galaxy.ansible.com/sparknsh/ntp)
 
 Development of this project is managed in a private repository then pushed out to [GitLab](https://gitlab.com/sparknsh/ansible-role-ntp) and [GitHub](https://github.com/sparknsh/ansible-role-ntp) when we have a new version for you. If you have any issues please contact [sparknsh](https://www.sparknsh.com/contact?type=issue&name=ansible-role-ntp)
 
