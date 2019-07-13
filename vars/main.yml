@@ -1,3 +1,4 @@
 ---
 
-ntp_tzdata_package: tzdata
+ntp__ntp_package: ntp
+ntp__tzdata_package: tzdata

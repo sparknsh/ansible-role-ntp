@@ -1,37 +1,35 @@
 # Ansible Role: NTP
 
-#### Version: 1.0.2
+#### Version: 1.0.3
 
-[![pipeline status](https://gitlab.com/sparknsh/ansible-role-ntp/badges/master/pipeline.svg)](https://gitlab.com/sparknsh/ansible-role-ntp/commits/master)
-[![Ansible Role](https://img.shields.io/ansible/role/291593.svg)](https://galaxy.ansible.com/sparknsh/ntp)
-[![Ansible Role](https://img.shields.io/ansible/role/d/291593.svg)](https://galaxy.ansible.com/sparknsh/ntp)
+[![](https://img.shields.io/badge/role-sparknsh.ntp-blue.svg)](https://galaxy.ansible.com/sparknsh/ntp)
 
 Development of this project is managed in a private repository then pushed out to [GitLab](https://gitlab.com/sparknsh/ansible-role-ntp) and [GitHub](https://github.com/sparknsh/ansible-role-ntp) when we have a new version for you. If you have any issues please contact [sparknsh](https://www.sparknsh.com/contact?type=issue&name=ansible-role-ntp)
 
 ## Role Variables
 
 ```yaml
-ntp_enabled: True
-ntp_timezone:
+ntp__enabled: true
+ntp__timezone:
 
-ntp_servers: []
+ntp__servers: []
 
-ntp_restrict: []
+ntp__restrict: []
 ```
 
 #### Example
 
 ```yaml
-ntp_enabled: True
-ntp_timezone: Etc/UTC
+ntp__enabled: true
+ntp__timezone: Etc/UTC
 
-ntp_servers:
+ntp__servers:
   - "time.nist.gov iburst"
   - "ntp1.npl.co.uk iburst"
   - "ntp.sydney.nmi.gov.au iburst"
   - "time.google.com iburst"
 
-ntp_restrict:
+ntp__restrict:
   - "127.0.0.1"
   - "::1"
 ```
@@ -52,4 +50,4 @@ MIT
 
 ## Author Information
 
-This role was created in 2018 by [sparknsh](https://www.sparknsh.com) at [Rebel Media, Inc.](https://www.rebelmedia.io/)
+This role was created in 2019 by [sparknsh](https://www.sparknsh.com) at [Rebel Media, Inc.](https://www.rebelmedia.io/)
