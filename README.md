@@ -1,6 +1,6 @@
 # Ansible Role: NTP
 
-#### Version: 1.0.4
+#### Version: 1.0.5
 
 [![](https://img.shields.io/badge/role-sparknsh.ntp-blue.svg)](https://galaxy.ansible.com/sparknsh/ntp)
 
