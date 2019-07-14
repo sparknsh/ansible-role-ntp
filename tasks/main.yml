@@ -22,17 +22,19 @@
     name: "{{ ntp__daemon }}"
     state: started
     enabled: true
-  when: ntp__enabled
+  when:
+    - ntp__enabled | bool
 
 - name: NTP | Stop & Disable NTP
   service:
     name: "{{ ntp__daemon }}"
     state: stopped
     enabled: false
-  when: not ntp__enabled
+  when:
+    - not ntp__enabled | bool
 
 - name: NTP | Generate ntp.conf
   template:
-    src: ntp.conf.j2
-    dest: /etc/ntp.conf
+    src: "{{ ntp__conf_tpl }}"
+    dest: "{{ ntp__conf_file }}"
   notify: Restart NTP

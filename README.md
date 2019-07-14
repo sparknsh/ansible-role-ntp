@@ -1,6 +1,6 @@
 # Ansible Role: NTP
 
-#### Version: 1.0.3
+#### Version: 1.0.4
 
 [![](https://img.shields.io/badge/role-sparknsh.ntp-blue.svg)](https://galaxy.ansible.com/sparknsh/ntp)
 
@@ -12,6 +12,8 @@ Development of this project is managed in a private repository then pushed out t
 ntp__enabled: true
 ntp__timezone:
 
+ntp__conf_tpl: ntp.conf.j2
+
 ntp__servers: []
 
 ntp__restrict: []
@@ -22,6 +24,8 @@ ntp__restrict: []
 ```yaml
 ntp__enabled: true
 ntp__timezone: Etc/UTC
+
+ntp__conf_tpl: ntp.conf.j2
 
 ntp__servers:
   - "time.nist.gov iburst"
